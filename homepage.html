@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Academy | Master CI/CD & Cloud</title>
+    <style>
+        /* Modern Reset & Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #1e293b;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #cbd5e1;
+        }
+
+        .cta-btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #7dd3fc;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0f172a;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #38bdf8;
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Courses/Tools Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            border-top: 4px solid #38bdf8;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+
+        /* Contact Form */
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            background-color: #1e293b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0f172a;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header>
+        <div class="navbar">
+            <div class="logo">DevOps_Academy</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Master the Art of DevOps</h1>
+        <p>Accelerate your engineering career. Learn CI/CD automation, cloud infrastructure, and containerization from industry experts with 100% hands-on labs.</p>
+        <a href="#contact" class="cta-btn">Enroll / Request Demo</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Why Choose Us?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Real-World Projects</h3>
+                <p>We don't just teach theory. You will build and deploy full production-ready architectures mirroring enterprise environments.</p>
+            </div>
+            <div class="card">
+                <h3>Expert Mentors</h3>
+                <p>Learn directly from active, senior DevOps Engineers and Site Reliability Engineers (SREs) working in top tech companies.</p>
+            </div>
+            <div class="card">
+                <h3>Placement Support</h3>
+                <p>Get access to resume workshops, mock technical interviews, and direct referrals to hiring partners upon graduation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" style="background-color: #f1f5f9; max-width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2>Training Modules</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Linux & Git Basics</h3>
+                    <p>Mastering the command line, shell scripting, and advanced version control workflows with Git & GitHub.</p>
+                </div>
+                <div class="card">
+                    <h3>2. CI/CD Pipelines</h3>
+                    <p>Automating builds and testing using Jenkins, GitHub Actions, and GitLab CI/CD pipelines.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Containers & Orchestration</h3>
+                    <p>Packaging applications with Docker and scaling them dynamically using production-grade Kubernetes clusters.</p>
+                </div>
+                <div class="card">
+                    <h3>4. Infrastructure as Code (IaC)</h3>
+                    <p>Provisioning cloud infrastructure reliably using Terraform and managing configurations via Ansible.</p>
+                </div>
+                <div class="card">
+                    <h3>5. Cloud Platforms</h3>
+                    <p>Deep dive into deploying highly available, secure architectures on Amazon Web Services (AWS) and Azure.</p>
+                </div>
+                <div class="card">
+                    <h3>6. Monitoring & Logging</h3>
+                    <p>Setting up complete observability stacks with Prometheus, Grafana, and ELK to monitor system health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message / Questions</label>
+                    <textarea id="message" name="message" rows="4" placeholder="I am looking for weekend batches..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DevOps Academy. All rights reserved. Automated with love.</p>
+    </footer>
+
+</body>
+</html>
